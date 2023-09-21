@@ -33,7 +33,7 @@ const Intro = () => {
         </div>
       </div>
 
-      <motion.p
+      <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         className='mb-10 mt-4 px-4 text-lg md:text-xl font-normal !leading-[1.5]'>
@@ -49,7 +49,7 @@ const Intro = () => {
         <span className='font-bold underline'>
           React Js (Next Js) & NodeJs (Express Js & Nest Js).
         </span>
-      </motion.p>
+      </motion.h1>
 
       <div className='flex flex-col md:flex-row gap-3 items-center justify-center'>
         <motion.div
