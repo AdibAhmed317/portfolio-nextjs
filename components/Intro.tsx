@@ -41,7 +41,7 @@ const Intro = () => {
         <span className='font-bold'> Full-Stack Developer</span> with
         <span className='font-bold'> 2 years</span> of experince. I enjoy
         building
-        <span className='font-bold'>
+        <span className='font-bold italic'>
           {' '}
           Web Applications & Mobile Applications
         </span>
@@ -58,13 +58,16 @@ const Intro = () => {
           className='flex flex-col md:flex-row gap-3'>
           <Link
             href='#contact'
-            className='bg-gray-950 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition'>
-            Get in touch <BsArrowRight />
+            className='group bg-gray-950 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition'>
+            Get in touch{' '}
+            <BsArrowRight className='opacity-70 group-hover:translate-x-2 transition' />
           </Link>
           <a
-            href=''
-            className='bg-white text-black px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110'>
-            Download CV <HiDownload />
+            href='/CV.pdf'
+            download={true}
+            className='group bg-white text-black px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition'>
+            Download CV{' '}
+            <HiDownload className='opacity-70 group-hover:translate-y-1 transition' />
           </a>
         </motion.div>
         <motion.div
@@ -74,19 +77,19 @@ const Intro = () => {
           <a
             target='_blank'
             href='https://www.facebook.com/Adib.Ahmed317/'
-            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full'>
+            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition'>
             <BsFacebook />
           </a>
           <a
             target='_blank'
             href='https://www.linkedin.com/in/adib-ahmed/'
-            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full'>
+            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition'>
             <BsLinkedin />
           </a>
           <a
             target='_blank'
             href='https://github.com/AdibAhmed317'
-            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full'>
+            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition'>
             <BsGithub />
           </a>
         </motion.div>
