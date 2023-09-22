@@ -2,7 +2,7 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-// import corpcommentImg from '@/public/corpcomment.png';
+import alraya from '@/public/assets/Projects/alraya.png';
 // import rmtdevImg from '@/public/rmtdev.png';
 // import wordanalyticsImg from '@/public/wordanalytics.png';
 
@@ -60,48 +60,49 @@ export const experiencesData = [
   },
 ] as const;
 
-// export const projectsData = [
-//   {
-//     title: 'CorpComment',
-//     description:
-//       'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-//     tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-//     imageUrl: corpcommentImg,
-//   },
-//   {
-//     title: 'rmtDev',
-//     description:
-//       'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-//     tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-//     imageUrl: rmtdevImg,
-//   },
-//   {
-//     title: 'Word Analytics',
-//     description:
-//       'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-//     tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-//     imageUrl: wordanalyticsImg,
-//   },
-// ] as const;
+export const projectsData = [
+  {
+    title: 'RoadSaints (e-commerce)',
+    description:
+      'I worked as a full-stack developer on this project. This is a e-commerce website for bike accessories. The focus is to find best bike accessories for the bikers with a resonable price.',
+    tags: ['React', 'SQL Server Manager', 'Tailwind', 'ASP.Net Web Api'],
+    imageUrl: alraya,
+  },
+  {
+    title: 'Al-Raya',
+    description:
+      'This is a website for a company named Al-Raya. Users can buy their groceries and daily needs from this website.',
+    tags: ['React', 'NodeJs', 'ExpressJs', 'Tailwind', 'Redux'],
+    imageUrl: alraya,
+  },
+  {
+    title: 'CarHub',
+    description:
+      'A web app for getting all the information about your favourite cars.',
+    tags: ['Next.js', 'Tailwind', 'TypeScript', 'RestAPI'],
+    imageUrl: alraya,
+  },
+] as const;
 
 export const skillsData = [
-  'HTML',
-  'CSS',
   'JavaScript',
   'TypeScript',
+  'C#',
+  'C++',
+  'php',
+  'HTML',
+  'CSS',
   'React',
   'Next.js',
+  'Nest.js',
   'Node.js',
   'Git',
   'Tailwind',
   'Prisma',
   'MongoDB',
   'Redux',
-  'GraphQL',
-  'Apollo',
   'Express',
   'PostgreSQL',
-  'Python',
-  'Django',
   'Framer Motion',
+  'ASP.Net MVC',
 ] as const;

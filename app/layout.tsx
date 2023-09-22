@@ -7,7 +7,7 @@ import Intro from '@/components/Intro';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Adib Ahmed',
+  title: 'Adib Ahmed | Portfolio Website',
   description:
     'I am Adib Ahmed. A Full-Stack Developer with 2 years of experince.',
 };
