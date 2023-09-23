@@ -3,8 +3,8 @@ import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 import alraya from '@/public/assets/Projects/alraya.png';
-// import rmtdevImg from '@/public/rmtdev.png';
-// import wordanalyticsImg from '@/public/wordanalytics.png';
+import carhub from '@/public/assets/Projects/carhub.png';
+import roadsaints from '@/public/assets/Projects/expense.png';
 
 export const links = [
   {
@@ -66,21 +66,21 @@ export const projectsData = [
     description:
       'I worked as a full-stack developer on this project. This is a e-commerce website for bike accessories. The focus is to find best bike accessories for the bikers with a resonable price.',
     tags: ['React', 'SQL Server Manager', 'Tailwind', 'ASP.Net Web Api'],
-    imageUrl: alraya,
+    imageUrl: roadsaints,
   },
   {
-    title: 'Al-Raya',
+    title: 'Al-Raya (e-commerce)',
     description:
-      'This is a website for a company named Al-Raya. Users can buy their groceries and daily needs from this website.',
+      'This is a website for a company named Al-Raya. This is a e-commerce website for groceries. The focus is to find daily groceries and needs for customers with a resonable price and experince great user interface.',
     tags: ['React', 'NodeJs', 'ExpressJs', 'Tailwind', 'Redux'],
     imageUrl: alraya,
   },
   {
     title: 'CarHub',
     description:
-      'A web app for getting all the information about your favourite cars.',
+      'This is a NextJs for getting all the information about your favourite cars. User can login or register. User can see all the details about searched car. User can book cars for rent with a user friendly user interface',
     tags: ['Next.js', 'Tailwind', 'TypeScript', 'RestAPI'],
-    imageUrl: alraya,
+    imageUrl: carhub,
   },
 ] as const;
 

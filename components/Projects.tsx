@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
   return (
     <section className='text-center'>
-      <SectionHeading title='Projects' />
+      <SectionHeading title='My Projects' />
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
