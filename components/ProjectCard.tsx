@@ -18,18 +18,19 @@ const ProjectCard = ({
     target: ref,
     offset: ['0 1', '1.33 2'],
   });
-  useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
 
   return (
     <motion.div
       className='group mb-3 sm:mb-8 last:mb-0'
       style={{
-        scale: scrollYProgress,
-        opacity: scrollYProgress,
+        scale: scaleProgress,
+        opacity: opacityProgress,
       }}>
       <section
         className='text-start bg-gray-100 md:max-w-[45rem] border border-black/5 overflow-hidden pr-0
-        md:pr-8 relative md:h-[22rem] even:pl-8 hover:bg-gray-200 transition'>
+        md:pr-8 relative md:h-[22rem] group-even:pl-8 hover:bg-gray-200 transition rounded-lg'>
         <div
           className='pt-4 pb-7 px-5 pl-0 pr-0 sm:pt-0 md:pl-10 md:pr-2 md:pt-10 max-w-[60%] md:max-w-[50%] flex flex-col h-full 
         group-even:ml-[8rem] md:group-even:ml-[22rem]'>
@@ -49,9 +50,9 @@ const ProjectCard = ({
           src={imageUrl}
           alt='project image'
           quality={95}
-          className='absolute top-[40px] -right-60 md:-right-80 h-[17rem] w-auto md:h-full md:w-[40rem] rounded-lg shadow-2xl 
+          className='absolute top-[40px] -right-60 md:-right-80 h-[17rem] w-auto md:h-full md:w-[40rem] rounded-lg shadow-2xl
           group-even:right-80 
-          group-even:-left-52 
+          group-even:-left-60 
           md:group-even:-left-80 
           transition 
           group-hover:-translate-x-5 
@@ -62,7 +63,7 @@ const ProjectCard = ({
           group-even:group-hover:translate-y-5 
           group-even:group-hover:rotate-3 
 
-          group-hover:scale-110'
+          group-hover:scale-105'
         />
       </section>
     </motion.div>
