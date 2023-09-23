@@ -30,7 +30,7 @@ const ProjectCard = ({
       }}>
       <section
         className='text-start bg-gray-100 md:max-w-[45rem] border border-black/5 overflow-hidden pr-0
-        md:pr-8 relative md:h-[22rem] group-even:pl-8 hover:bg-gray-200 transition rounded-lg'>
+        md:pr-8 relative md:h-[22rem] hover:bg-gray-200 transition rounded-lg'>
         <div
           className='pt-4 pb-7 px-5 pl-0 pr-0 sm:pt-0 md:pl-10 md:pr-2 md:pt-10 max-w-[60%] md:max-w-[50%] flex flex-col h-full 
         group-even:ml-[8rem] md:group-even:ml-[22rem]'>

@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard';
 
 const Projects = () => {
   return (
-    <section className='text-center'>
+    <section id='projects' className='text-center scroll-mt-28'>
       <SectionHeading title='My Projects' />
       <div>
         {projectsData.map((project, index) => (

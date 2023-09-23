@@ -71,7 +71,7 @@ export const projectsData = [
   {
     title: 'Al-Raya (e-commerce)',
     description:
-      'This is a website for a company named Al-Raya. This is a e-commerce website for groceries. The focus is to find daily groceries and needs for customers with a resonable price and experince great user interface.',
+      'This is a website for a company named Al-Raya. This is a e-commerce website for groceries. The focus is to find daily groceries and needs for customers with a resonable price.',
     tags: ['React', 'NodeJs', 'ExpressJs', 'Tailwind', 'Redux'],
     imageUrl: alraya,
   },
