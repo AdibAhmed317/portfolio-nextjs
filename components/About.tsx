@@ -17,9 +17,9 @@ const About = () => {
       transition={{
         delay: 0.175,
       }}
-      className='mb-28 md:mb-0 max-w-[45rem] text-center leading-8 scroll-mt-28 h-auto md:h-[35vh] justify-center items-center flex flex-col'>
+      className='mb-28 md:mb-0 max-w-[45rem] text-center leading-10 space-y-6 scroll-mt-28 h-auto md:h-[35vh] justify-center items-center flex flex-col'>
       <SectionHeading title={'About me'} />
-      <p className=''>
+      <p className='text-xl'>
         Welcome to my website my name is{' '}
         <span className='font-bold'> Adib Ahmed.</span> I am a recent Computer
         Science graduate who is highly motivated and pays great attention to
