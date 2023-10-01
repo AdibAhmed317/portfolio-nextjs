@@ -14,7 +14,10 @@ const Experience = () => {
   const { ref } = useSectionInView('Experience', 0.35);
 
   return (
-    <section ref={ref} id='experience' className='h-screen text-center'>
+    <section
+      ref={ref}
+      id='experience'
+      className='text-center scroll-mt-28 mb-28 sm:mb-40'>
       <SectionHeading title='Experience' />
       <VerticalTimeline lineColor=''>
         {experiencesData.map((experience, index) => (
