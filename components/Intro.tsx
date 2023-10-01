@@ -8,10 +8,11 @@ import Link from 'next/link';
 import { BsArrowRight, BsFacebook, BsLinkedin, BsGithub } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 const Intro = () => {
   const { ref } = useSectionInView('Home', 0.1);
-
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       ref={ref}
@@ -64,15 +65,19 @@ const Intro = () => {
           className='flex flex-col md:flex-row gap-3'>
           <Link
             href='#contact'
-            className='group bg-gray-950 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition'>
-            Get in touch{' '}
+            className='group bg-gray-950 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition'
+            onClick={() => {
+              setActiveSection('Contact');
+              setTimeOfLastClick(Date.now());
+            }}>
+            Get in touch
             <BsArrowRight className='opacity-70 group-hover:translate-x-2 transition' />
           </Link>
           <a
             href='/CV.pdf'
             download={true}
             className='group bg-white text-black px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition'>
-            Download CV{' '}
+            Download CV
             <HiDownload className='opacity-70 group-hover:translate-y-1 transition' />
           </a>
         </motion.div>
