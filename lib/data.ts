@@ -35,28 +35,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
+    title: 'American International University-Bangladesh',
+    location: 'Dhaka, Bangladesh',
     description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
+      'I graduated after 4 years of studying in Computer Science and Engineering.',
     icon: React.createElement(LuGraduationCap),
     date: '2019',
   },
   {
     title: 'Front-End Developer',
-    location: 'Orlando, FL',
+    location: 'Dhaka, Bangladesh',
     description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
+      'I worked as a front-end developer for 3 months as an intern. I also upskilled to the full stack.',
     icon: React.createElement(CgWorkAlt),
-    date: '2019 - 2021',
+    date: 'October 2023 - December 2023',
   },
   {
     title: 'Full-Stack Developer',
-    location: 'Houston, TX',
+    location: 'Dhaka, Bangladesh',
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer willing to work as a freelancer. My stack includes React, Next.js, Nest.js, TypeScript, Tailwind, TypeORM, PostgreSQL and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: '2021 - present',
+    date: '2024 - present',
   },
 ] as const;
 
@@ -64,7 +64,7 @@ export const projectsData = [
   {
     title: 'RoadSaints (e-commerce)',
     description:
-      'I worked as a full-stack developer on this project. This is a e-commerce website for bike accessories. The focus is to find best bike accessories for the bikers with a resonable price.',
+      'I worked as a full-stack developer on this project. This is a e-commerce website for bike accessories. The focus is to find best bike accessories for the bikers with a reasonable price.',
     tags: ['React', 'SQL Server Manager', 'Tailwind', 'ASP.Net Web Api'],
     imageUrl: roadsaints,
   },
