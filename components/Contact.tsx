@@ -34,8 +34,24 @@ const Contact = () => {
         }}
         className='mt-10 flex flex-col'>
         <input
-          name='senderEmail'
-          className='h-14 rounded-lg border border-black/10 px-4'
+          name='user_name'
+          className='h-14 rounded-lg border border-black/10 px-4 my-2'
+          placeholder='Name'
+          type='text'
+          required
+          maxLength={500}
+        />
+        <input
+          name='user_subject'
+          className='h-14 rounded-lg border border-black/10 px-4 my-2'
+          placeholder='Subject'
+          type='text'
+          required
+          maxLength={500}
+        />
+        <input
+          name='user_email'
+          className='h-14 rounded-lg border border-black/10 px-4 my-2'
           placeholder='Email'
           type='email'
           required
