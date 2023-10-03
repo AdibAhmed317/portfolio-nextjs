@@ -1,14 +1,36 @@
 'use client';
 
 import { useSectionInView } from '@/lib/hooks';
-import React from 'react';
+import React, { LegacyRef, useRef } from 'react';
 import SectionHeading from './SectionHeading';
 import { FaPaperPlane } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { sendEmail } from '@/actions/sendEmail';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const { ref } = useSectionInView('Contact', 0.35);
+
+  const formRef: LegacyRef<HTMLFormElement> = useRef(null);
+
+  const handleSubmit = () => {
+    if (formRef.current) {
+      emailjs
+        .sendForm(
+          'service_y8i4avx',
+          'template_m02y3bh',
+          formRef.current,
+          'JXEzyORxZ75-xbeXN'
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+  };
 
   return (
     <motion.section
@@ -29,15 +51,13 @@ const Contact = () => {
       </p>
 
       <form
-        action={async (formData) => {
-          await sendEmail(formData);
-        }}
-        className='mt-10 flex flex-col'>
+        className='mt-10 flex flex-col'
+        ref={formRef}
+        onSubmit={handleSubmit}>
         <input
           name='user_name'
           className='h-14 rounded-lg border border-black/10 px-4 my-2'
           placeholder='Name'
-          type='text'
           required
           maxLength={500}
         />
@@ -45,7 +65,6 @@ const Contact = () => {
           name='user_subject'
           className='h-14 rounded-lg border border-black/10 px-4 my-2'
           placeholder='Subject'
-          type='text'
           required
           maxLength={500}
         />
