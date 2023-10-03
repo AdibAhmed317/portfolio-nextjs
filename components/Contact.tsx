@@ -42,7 +42,7 @@ const Contact = () => {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}>
       <SectionHeading title='Contact' />
-      <p className='text-gray-700'>
+      <p className='text-gray-700 dark:text-white/80'>
         You can contact me directly at{' '}
         <a href='mailto:ahmedadib31@gmail.com' className='underline'>
           ahmedadib317@gmail.com{' '}
@@ -51,26 +51,26 @@ const Contact = () => {
       </p>
 
       <form
-        className='mt-10 flex flex-col'
+        className='mt-10 flex flex-col dark:text-black'
         ref={formRef}
         onSubmit={handleSubmit}>
         <input
           name='user_name'
-          className='h-14 rounded-lg border border-black/10 px-4 my-2'
+          className='h-14 rounded-lg border border-black/10 px-4 my-2 darkModeForm'
           placeholder='Name'
           required
           maxLength={500}
         />
         <input
           name='user_subject'
-          className='h-14 rounded-lg border border-black/10 px-4 my-2'
+          className='h-14 rounded-lg border border-black/10 px-4 my-2 darkModeForm'
           placeholder='Subject'
           required
           maxLength={500}
         />
         <input
           name='user_email'
-          className='h-14 rounded-lg border border-black/10 px-4 my-2'
+          className='h-14 rounded-lg border border-black/10 px-4 my-2 darkModeForm'
           placeholder='Email'
           type='email'
           required
@@ -78,14 +78,14 @@ const Contact = () => {
         />
         <textarea
           name='message'
-          className='h-52 my-3 rounded-lg border border-black/10 p-4'
+          className='h-52 my-3 rounded-lg border border-black/10 p-4 darkModeForm'
           placeholder='Message'
           required
           maxLength={500}
         />
         <button
           type='submit'
-          className='flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all group 
+          className='flex items-center justify-center gap-2 h-[3rem] w-[8rem] dark:bg-white/20 bg-gray-900 text-white rounded-full outline-none transition-all group 
           focus:scale-110 hover:scale-110 active:scale-105 hover:bg-gray-950'>
           Submit{' '}
           <FaPaperPlane className='text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1' />

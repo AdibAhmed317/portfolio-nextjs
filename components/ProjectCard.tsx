@@ -30,12 +30,14 @@ const ProjectCard = ({
       }}>
       <section
         className='text-start bg-gray-100 md:max-w-[45rem] border border-black/5 overflow-hidden pr-0
-        md:pr-8 relative md:h-[22rem] hover:bg-gray-200 transition rounded-lg'>
+        md:pr-8 relative md:h-[22rem] hover:bg-gray-200 transition rounded-lg dark:bg-white/10 dark:hover:bg-white/20'>
         <div
           className='pt-4 pb-7 px-5 pl-0 pr-0 sm:pt-0 md:pl-10 md:pr-2 md:pt-10 max-w-[60%] md:max-w-[50%] flex flex-col h-full 
         group-even:ml-[8rem] md:group-even:ml-[22rem]'>
           <h3 className='text-2xl font-semibold'>{title}</h3>
-          <p className='mt-2 leading-relaxed text-gray-700'>{description}</p>
+          <p className='mt-2 leading-relaxed text-gray-700 dark:text-gray-50'>
+            {description}
+          </p>
           <ul className='flex flex-wrap mt-4 gap-2 md:mt-auto'>
             {tags.map((tag, index) => (
               <li

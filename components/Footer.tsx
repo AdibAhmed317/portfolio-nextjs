@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className='mb-10 px-4 text-center text-gray-500'>
-      <small className='mb-2 text-xs'>
+      <small className='mb-2 text-xs block'>
         &copy; All rights reserved to Adib Ahmed.
       </small>
       <p className='text-xs'>

@@ -5,3 +5,15 @@
 html {
   --line-color: #e5e7eb;
 }
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+
+.darkSetting {
+  @apply dark:bg-white/10 dark:text-gray-50;
+}
+
+.darkModeForm {
+  @apply dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none;
+}

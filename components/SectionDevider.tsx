@@ -11,7 +11,7 @@ const SectionDevider = () => {
       transition={{
         delay: 0.125,
       }}
-      className='bg-gray-300 my-24 h-16 w-1 rounded-full hidden md:block'></motion.div>
+      className='bg-gray-300 my-24 h-16 w-1 rounded-full hidden md:block dark:bg-opacity-20'></motion.div>
   );
 };
 

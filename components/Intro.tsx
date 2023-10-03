@@ -76,7 +76,7 @@ const Intro = () => {
           <a
             href='/CV.pdf'
             download={true}
-            className='group bg-white text-black px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition'>
+            className='group bg-white text-black px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition darkSetting'>
             Download CV
             <HiDownload className='opacity-70 group-hover:translate-y-1 transition' />
           </a>
@@ -88,19 +88,19 @@ const Intro = () => {
           <a
             target='_blank'
             href='https://www.facebook.com/Adib.Ahmed317/'
-            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition'>
+            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'>
             <BsFacebook />
           </a>
           <a
             target='_blank'
             href='https://www.linkedin.com/in/adib-ahmed/'
-            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition'>
+            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'>
             <BsLinkedin />
           </a>
           <a
             target='_blank'
             href='https://github.com/AdibAhmed317'
-            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition'>
+            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'>
             <BsGithub />
           </a>
         </motion.div>
