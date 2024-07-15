@@ -17,7 +17,8 @@ const Intro = () => {
     <section
       ref={ref}
       id='home'
-      className='mb-28 md:mb-0 max-w-[50rem] text-center sm:mb-0 scroll-mt-36 h-auto md:h-[41vh] mt-auto md:mt-28'>
+      className='mb-28 md:mb-0 max-w-[50rem] text-center sm:mb-0 scroll-mt-36 h-auto md:h-[41vh] mt-auto md:mt-28'
+    >
       <div className='flex items-center justify-center'>
         <div>
           <motion.div
@@ -26,7 +27,8 @@ const Intro = () => {
             transition={{
               type: 'tween',
               duration: 0.2,
-            }}>
+            }}
+          >
             <Image
               src={intro}
               alt='dp'
@@ -43,7 +45,8 @@ const Intro = () => {
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className='mb-10 mt-4 px-4 text-lg md:text-xl font-normal !leading-[1.5]'>
+        className='mb-10 mt-4 px-4 text-lg md:text-xl font-normal !leading-[1.5]'
+      >
         Hey there. I'm <span className='font-bold'> Adib Ahmed.</span> I'm a
         <span className='font-bold'> Full-Stack Developer</span> with
         <span className='font-bold'> 2 years</span> of experince. I enjoy
@@ -54,7 +57,8 @@ const Intro = () => {
         </span>
         . My focus is{' '}
         <span className='font-bold underline'>
-          React Js (Next Js) & NodeJs (Express Js & Nest Js).
+          React Js (Next Js), NodeJs (Express Js & Nest Js) & React Native (Cli
+          & Expo).
         </span>
       </motion.h1>
 
@@ -62,21 +66,24 @@ const Intro = () => {
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
-          className='flex flex-col md:flex-row gap-3'>
+          className='flex flex-col md:flex-row gap-3'
+        >
           <Link
             href='#contact'
             className='group bg-gray-950 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition'
             onClick={() => {
               setActiveSection('Contact');
               setTimeOfLastClick(Date.now());
-            }}>
+            }}
+          >
             Get in touch
             <BsArrowRight className='opacity-70 group-hover:translate-x-2 transition' />
           </Link>
           <a
             href='/CV.pdf'
             download={true}
-            className='group bg-white text-black px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition darkSetting'>
+            className='group bg-white text-black px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition darkSetting'
+          >
             Download CV
             <HiDownload className='opacity-70 group-hover:translate-y-1 transition' />
           </a>
@@ -84,23 +91,27 @@ const Intro = () => {
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
-          className='flex justify-center items-center gap-5'>
+          className='flex justify-center items-center gap-5'
+        >
           <a
             target='_blank'
             href='https://www.facebook.com/Adib.Ahmed317/'
-            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'>
+            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'
+          >
             <BsFacebook />
           </a>
           <a
             target='_blank'
             href='https://www.linkedin.com/in/adib-ahmed/'
-            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'>
+            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'
+          >
             <BsLinkedin />
           </a>
           <a
             target='_blank'
             href='https://github.com/AdibAhmed317'
-            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'>
+            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'
+          >
             <BsGithub />
           </a>
         </motion.div>

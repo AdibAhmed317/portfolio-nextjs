@@ -51,12 +51,12 @@ export const experiencesData = [
     date: 'October 2023 - December 2023',
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'Dhaka, Bangladesh',
+    title: 'Software Engineer',
+    location: 'Chittagong, Bangladesh',
     description:
-      "I'm now a full-stack developer willing to work as a freelancer. My stack includes React, Next.js, Nest.js, TypeScript, Tailwind, TypeORM, PostgreSQL and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack software engineer at International Islamic University Chittagong. My stack includes React, React Native, Next.js, Nest.js, TypeScript, Tailwind, TypeORM, PostgreSQL and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: '2024 - present',
+    date: 'May 2024 - present',
   },
 ] as const;
 
@@ -74,6 +74,13 @@ export const projectsData = [
       'This is a website for a company named Al-Raya. This is a e-commerce website for groceries. The focus is to find daily groceries and needs for customers with a resonable price.',
     tags: ['React', 'NodeJs', 'ExpressJs', 'Tailwind', 'Redux'],
     imageUrl: alraya,
+  },
+  {
+    title: 'CarHub',
+    description:
+      'This is a NextJs for getting all the information about your favourite cars. User can login or register. User can see all the details about searched car. User can book cars for rent with a user friendly user interface',
+    tags: ['Next.js', 'Tailwind', 'TypeScript', 'RestAPI'],
+    imageUrl: carhub,
   },
   {
     title: 'CarHub',
