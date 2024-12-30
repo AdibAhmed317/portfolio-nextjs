@@ -53,7 +53,7 @@ const Contact = () => {
         You can contact me directly at{' '}
         <a href='mailto:ahmedadib31@gmail.com' className='underline'>
           adib.ah.official069@gmail.com
-        </a>
+        </a>{' '}
         or use the form below.
       </p>
 
