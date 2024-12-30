@@ -48,7 +48,7 @@ const Intro = () => {
         className='mb-10 mt-4 px-4 text-lg md:text-xl font-normal !leading-[1.5]'
       >
         Hey there. I'm <span className='font-bold'> Adib Ahmed.</span> I'm a
-        <span className='font-bold'> Full-Stack Developer</span> with
+        <span className='font-bold'> Full-Stack Software Engineer</span> with
         <span className='font-bold'> 2 years</span> of experince. I enjoy
         building
         <span className='font-bold italic'>
