@@ -19,5 +19,5 @@ You can view the portfolio here: [your-portfolio-link.com](https://your-portfoli
 Want to connect? Feel free to reach out!
 
 - **Email:** adib.ah.official069@gmail.com  
-- **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/adib-ahmed)  
-- **Twitter:** [@yourhandle](https://twitter.com/anefthynos)
+- **LinkedIn:** [linkedin.com/in/adib-ahmed](https://linkedin.com/in/adib-ahmed)  
+- **Twitter:** [@anefthynos](https://twitter.com/anefthynos)
