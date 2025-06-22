@@ -6,7 +6,7 @@ This portfolio is a reflection of who I am as a developer. It includes my backgr
 
 ## 🔗 Live Website
 
-You can view the portfolio here: [your-portfolio-link.com](https://your-portfolio-link.com)
+You can view the portfolio here: [adibahmed.vercel.app](https://adibahmed.vercel.app/)
 
 ## 📁 What's Inside
 
