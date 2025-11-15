@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SectionHeading from './SectionHeading';
 import {
   VerticalTimeline,
@@ -12,14 +12,18 @@ import { useSectionInView } from '@/lib/hooks';
 
 const Experience = () => {
   const { ref } = useSectionInView('Experience', 0.35);
+  const [theme, setTheme] = useState<string | null>(null);
 
-  const theme = localStorage.getItem('theme');
+  useEffect(() => {
+    setTheme(localStorage.getItem('theme'));
+  }, []);
 
   return (
     <section
       ref={ref}
       id='experience'
-      className='text-center scroll-mt-28 mb-28 sm:mb-40'>
+      className='text-center scroll-mt-28 mb-28 sm:mb-40'
+    >
       <SectionHeading title='Experience' />
       <VerticalTimeline lineColor=''>
         {experiencesData.map((experience, index) => (
@@ -44,7 +48,8 @@ const Experience = () => {
               iconStyle={{
                 background: theme === 'light' ? 'white' : '#111116',
                 fontSize: '1.5rem',
-              }}>
+              }}
+            >
               <div className='text-start'>
                 <h3 className='font-semibold capitalize'>{experience.title}</h3>
                 <p className='font-normal !mt-0'>{experience.location}</p>
