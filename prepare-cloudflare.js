@@ -62,3 +62,33 @@ try {
 }
 
 console.log('✓ Cloudflare Pages structure prepared');
+
+// Move served _next static assets to the expected root path so HTML references like
+// "/_next/static/..." resolve correctly when served from the Pages output dir.
+try {
+  const nestedNext = path.join(workerDir, 'assets', '_next');
+  const rootNext = path.join(workerDir, '_next');
+  if (fs.existsSync(nestedNext) && !fs.existsSync(rootNext)) {
+    // Prefer rename (fast) and fall back to copy
+    try {
+      fs.renameSync(nestedNext, rootNext);
+      console.log('✓ Moved assets/_next -> _next');
+    } catch (e) {
+      // fallback copy
+      const copyDir = (src, dst) => {
+        if (!fs.existsSync(dst)) fs.mkdirSync(dst, { recursive: true });
+        for (const child of fs.readdirSync(src)) {
+          const childSrc = path.join(src, child);
+          const childDst = path.join(dst, child);
+          const stat = fs.statSync(childSrc);
+          if (stat.isDirectory()) copyDir(childSrc, childDst);
+          else fs.copyFileSync(childSrc, childDst);
+        }
+      };
+      copyDir(nestedNext, rootNext);
+      console.log('✓ Copied assets/_next -> _next');
+    }
+  }
+} catch (e) {
+  console.warn('⚠️ Could not relocate _next assets:', e.message);
+}
