@@ -87,7 +87,63 @@ export const projectsData = [
       'I developed the Zaitoon Academy Student Panel using React Native (Expo). The app features a colorful, child-friendly UI and integrates seamlessly with the existing backend APIs. It provides students with easy access to learning materials, results, attendance, and other essential school information.',
     tags: ['React Native', 'Expo', 'Mobile App', 'API Integration', 'UI/UX'],
     imageUrl: roadsaints,
+    type: 'mobile',
+    github: null,
+    live: null,
+  },
+  {
+    title: 'Albas Mart (e-commerce)',
+    description:
+      'This is a website for a company named Albas Mart. This is a e-commerce website for groceries. The focus is to find daily groceries and needs for customers with a resonable price.',
+    tags: ['React', 'NodeJs', 'ExpressJs', 'Tailwind', 'MongoDB'],
+    imageUrl: alraya,
     type: 'full-stack',
+    github: 'https://github.com/example/alraya',
+    live: null,
+  },
+  {
+    title: 'Cogmatt',
+    description:
+      'Cogmatt is a full-stack content generation and management platform built with TanStack Start and Hono. I implemented clean architecture principles across the frontend and backend, with PostgreSQL powering the database layer.',
+    tags: [
+      'Tanstack Start',
+      'Clean Architecture',
+      'Hono',
+      'PostgreSQL',
+      'Tailwind',
+    ],
+    imageUrl: alraya,
+    type: 'full-stack',
+    github: null,
+    live: null,
+  },
+  {
+    title: 'Real Estate',
+    description:
+      'Real Estate Matcher is a full-stack property investment analysis platform built with Next.js, React, and TypeScript. I implemented personalized financial algorithms and dynamic reporting, using authentic property data and client profiles to deliver ranked recommendations, break-even analysis, and exportable investment reports.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind'],
+    imageUrl: roadsaints,
+    type: 'full-stack',
+    github: null,
+    live: 'https://v0-real-estate-matcher.vercel.app/',
+  },
+  {
+    title: 'Unique Façade',
+    description:
+      'Unique Façade is a modern landing page designed for a glass company. I built a clean, responsive, and visually appealing interface to showcase their products and services effectively.',
+    tags: ['Next.js', 'Tailwind', 'TypeScript', 'RestAPI'],
+    imageUrl: carhub,
+    type: 'frontend',
+    github: null,
+    live: 'https://uftbd.com',
+  },
+  {
+    title: 'Newsdeck',
+    description:
+      'Newsdeck is a React Native app that lists all major Bangladeshi newspapers in one place. I built a simple, fast interface and used WebView to load each newspaper’s website directly inside the app for a smooth reading experience.',
+    tags: ['React Native', 'WebView', 'CLI'],
+    imageUrl: carhub,
+    type: 'mobile',
     github: null,
     live: null,
   },
@@ -100,36 +156,6 @@ export const projectsData = [
     type: 'full-stack',
     github: 'https://github.com/example/roadsaints',
     live: 'https://roadsaints.example.com',
-  },
-  {
-    title: 'Al-Raya (e-commerce)',
-    description:
-      'This is a website for a company named Al-Raya. This is a e-commerce website for groceries. The focus is to find daily groceries and needs for customers with a resonable price.',
-    tags: ['React', 'NodeJs', 'ExpressJs', 'Tailwind', 'Redux'],
-    imageUrl: alraya,
-    type: 'full-stack',
-    github: 'https://github.com/example/alraya',
-    live: null,
-  },
-  {
-    title: 'CarHub',
-    description:
-      'This is a NextJs for getting all the information about your favourite cars. User can login or register. User can see all the details about searched car. User can book cars for rent with a user friendly user interface',
-    tags: ['Next.js', 'Tailwind', 'TypeScript', 'RestAPI'],
-    imageUrl: carhub,
-    type: 'frontend',
-    github: null,
-    live: 'https://carhub.example.com',
-  },
-  {
-    title: 'CarHub',
-    description:
-      'This is a NextJs for getting all the information about your favourite cars. User can login or register. User can see all the details about searched car. User can book cars for rent with a user friendly user interface',
-    tags: ['Next.js', 'Tailwind', 'TypeScript', 'RestAPI'],
-    imageUrl: carhub,
-    type: 'frontend',
-    github: null,
-    live: null,
   },
 ] as const;
 
