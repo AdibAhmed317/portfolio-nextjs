@@ -35,19 +35,19 @@ const ProjectCard = ({
       }}
     >
       {variant === 'wide' ? (
-        <section className='text-start bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200 border border-black/5 overflow-hidden rounded-xl dark:bg-gradient-to-br dark:from-gray-800 dark:via-gray-900 dark:to-black dark:border-white/10 min-h-[36rem] w-full max-w-screen-xl mx-auto'>
+        <section className='text-start bg-white border border-black/[0.1] overflow-hidden rounded-xl dark:bg-white/10 h-[38rem] w-full flex flex-col'>
           <Image
             src={imageUrl}
             alt='project image'
             quality={95}
-            className='w-full h-64 sm:h-80 md:h-[28rem] object-cover'
+            className='w-full h-64 sm:h-72 md:h-80 object-cover'
             priority={false}
           />
-          <div className='p-6 md:p-10'>
-            <h3 className='text-2xl font-bold text-black dark:text-white mb-2 tracking-tight'>
+          <div className='p-8 md:p-5 flex flex-col justify-center flex-1'>
+            <h3 className='text-xl font-normal text-black dark:text-white mb-2 tracking-tight'>
               {title}
             </h3>
-            <p className='mt-2 leading-relaxed text-gray-700 dark:text-gray-200'>
+            <p className='mt-3 leading-relaxed text-sm text-gray-700 dark:text-gray-200'>
               {description}
             </p>
             <div>
@@ -85,20 +85,20 @@ const ProjectCard = ({
           </div>
         </section>
       ) : (
-        <section className='text-start bg-gradient-to-br from-gray-100 via-gray-50 to-gray-200 md:max-w-[47rem] border border-black/5 overflow-hidden pr-0 md:pr-8 relative min-h-[32rem] md:h-[32rem] hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 rounded-xl dark:bg-gradient-to-br dark:from-gray-800 dark:via-gray-900 dark:to-black dark:hover:from-gray-700 dark:hover:via-gray-800 dark:hover:to-gray-900'>
+        <section className='text-start bg-white border border-black/[0.1] md:max-w-[47rem] overflow-hidden pr-0 md:pr-8 relative h-[36rem] hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 rounded-xl dark:bg-white/10 flex flex-col'>
           {/* Mobile stacked layout */}
           <div className='block sm:hidden'>
             <Image
               src={imageUrl}
               alt={title}
               quality={95}
-              className='w-full h-48 object-cover rounded-t-xl'
+              className='w-full h-64 object-cover rounded-t-xl'
             />
-            <div className='px-5 py-6'>
-              <h3 className='text-xl font-bold text-black dark:text-white mb-2 tracking-tight'>
+            <div className='px-5 py-6 flex flex-col justify-between flex-1'>
+              <h3 className='text-lg font-normal text-black dark:text-white mb-2 tracking-tight'>
                 {title}
               </h3>
-              <p className='mt-2 mb-4 leading-relaxed text-gray-700 dark:text-gray-200'>
+              <p className='mt-3 mb-4 leading-relaxed text-sm text-gray-700 dark:text-gray-200'>
                 {description}
               </p>
               <div className='my-3 flex gap-2'>
@@ -135,11 +135,11 @@ const ProjectCard = ({
           </div>
           {/* Desktop layout unchanged */}
           <div className='hidden sm:block'>
-            <div className='pt-4 pb-7 px-5 pl-0 pr-0 sm:pt-0 md:pl-10 md:pr-2 md:pt-10 max-w-[60%] md:max-w-[50%] flex flex-col h-full group-even:ml-[8rem] md:group-even:ml-[22rem]'>
-              <h3 className='text-2xl font-bold text-black dark:text-white mb-2 tracking-tight'>
+            <div className='pt-4 pb-7 px-6 py-8 sm:pt-0 md:pl-12 md:pr-4 max-w-[70%] md:max-w-[60%] flex flex-col justify-between h-full group-even:ml-[8rem] md:group-even:ml-[22rem]'>
+              <h3 className='text-xl font-normal text-black dark:text-white mb-2 tracking-tight'>
                 {title}
               </h3>
-              <p className='mt-2 leading-relaxed text-gray-700 dark:text-gray-50'>
+              <p className='mt-3 leading-relaxed text-sm text-gray-700 dark:text-gray-50'>
                 {description}
               </p>
               <div>
@@ -179,7 +179,7 @@ const ProjectCard = ({
               src={imageUrl}
               alt='project image'
               quality={95}
-              className='absolute top-[40px] -right-60 md:-right-80 h-full w-auto md:h-full md:w-[40rem] rounded-xl shadow-2xl group-even:right-80 group-even:-left-60 md:group-even:-left-80 transition-all duration-300 group-hover:-translate-x-5 group-hover:translate-y-5 group-hover:-rotate-3 group-even:group-hover:translate-x-5 group-even:group-hover:translate-y-5 group-even:group-hover:rotate-3 group-hover:scale-105'
+              className='absolute top-[36px] -right-20 md:-right-32 h-[26rem] w-auto md:h-[28rem] md:w-[40rem] rounded-xl shadow-2xl group-even:right-20 group-even:-left-20 md:group-even:-left-32 transition-all duration-300 group-hover:-translate-x-5 group-hover:translate-y-5 group-hover:-rotate-3 group-even:group-hover:translate-x-5 group-even:group-hover:translate-y-5 group-even:group-hover:rotate-3 group-hover:scale-105'
             />
           </div>
         </section>

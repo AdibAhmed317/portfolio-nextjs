@@ -7,10 +7,10 @@ import ProjectCard from '../../components/ProjectCard';
 import { useRouter } from 'next/navigation';
 
 const TABS = [
+  { label: 'Full-Stack', value: 'full-stack' },
+  { label: 'Mobile', value: 'mobile' },
   { label: 'Frontend', value: 'frontend' },
   { label: 'Backend', value: 'backend' },
-  { label: 'Mobile', value: 'mobile' },
-  { label: 'Full-Stack', value: 'full-stack' },
 ];
 
 const ProjectsPage = () => {
@@ -64,7 +64,7 @@ const ProjectsPage = () => {
           filteredProjects.map((project, index) => (
             <div
               key={index}
-              className='w-full max-w-screen-xl px-2 sm:px-4 lg:px-8'
+              className='w-full max-w-[56rem] px-2 sm:px-4 lg:px-8'
             >
               <ProjectCard variant='wide' {...project} />
             </div>

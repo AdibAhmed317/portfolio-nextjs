@@ -21,9 +21,11 @@ const Projects = () => {
   return (
     <section ref={ref} id='projects' className='text-center scroll-mt-28 mb-28'>
       <SectionHeading title='Projects I’ve Worked On' />
-      <div className='flex flex-wrap justify-center gap-8 mt-8'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 justify-items-center'>
         {paginatedProjects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <div key={index} className='w-full max-w-[36rem]'>
+            <ProjectCard variant='wide' {...project} />
+          </div>
         ))}
       </div>
       <div className='flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 mt-8 w-full px-2'>

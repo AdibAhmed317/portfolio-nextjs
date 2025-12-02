@@ -11,7 +11,7 @@ const ProjectsPage = () => {
       <SectionHeading title='All Projects' />
       <div className='flex flex-col items-center gap-12 mt-8 w-full'>
         {projectsData.map((project, index) => (
-          <div key={index} className='w-full max-w-5xl'>
+          <div key={index} className='w-full max-w-[56rem]'>
             <ProjectCard {...project} />
           </div>
         ))}
