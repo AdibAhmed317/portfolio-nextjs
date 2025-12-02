@@ -95,10 +95,10 @@ const Intro = () => {
         >
           <a
             target='_blank'
-            href='https://www.facebook.com/Adib.Ahmed317/'
+            href='https://github.com/AdibAhmed317'
             className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'
           >
-            <BsFacebook />
+            <BsGithub />
           </a>
           <a
             target='_blank'
@@ -106,13 +106,13 @@ const Intro = () => {
             className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'
           >
             <BsLinkedin />
-          </a>
-          <a
-            target='_blank'
-            href='https://github.com/AdibAhmed317'
-            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'
-          >
-            <BsGithub />
+            <a
+              target='_blank'
+              href='https://www.facebook.com/Adib.Ahmed317/'
+              className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'
+            >
+              <BsFacebook />
+            </a>
           </a>
         </motion.div>
       </div>
