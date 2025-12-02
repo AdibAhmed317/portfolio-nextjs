@@ -106,13 +106,13 @@ const Intro = () => {
             className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'
           >
             <BsLinkedin />
-            <a
-              target='_blank'
-              href='https://www.facebook.com/Adib.Ahmed317/'
-              className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'
-            >
-              <BsFacebook />
-            </a>
+          </a>
+          <a
+            target='_blank'
+            href='https://www.facebook.com/Adib.Ahmed317/'
+            className='bg-white text-gray-700 px-3 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 active:scale-105 transition darkSetting'
+          >
+            <BsFacebook />
           </a>
         </motion.div>
       </div>
